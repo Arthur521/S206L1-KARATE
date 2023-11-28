@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>aula_inatel.ram.ram</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-11-28 09:56:56 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Testando retorno</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:10]"><span>[2:10]</span> <span>Testando retorno com informações inválidas (negativo)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:15]"><span>[3:15]</span> <span>Testando retorno e verificando o JSON</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:23]"><span>[4:23]</span> <span>Testando retorno de dados da localização</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:31]"><span>[5:31]</span> <span>Testando retorno de dados da localização (negativo)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:37]"><span>[6:37]</span> <span>Testando retorno de dados de episódio</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">aula_inatel/ram/ram.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API Rick and Morty</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Testando retorno</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1635</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:5]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:5]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:53.601 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api/character/3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1632</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">09:56:54.786 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/3
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:55.318 response time in milliseconds: 448
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 53725
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:53 GMT
+1 &lt; Etag: W/&quot;930-PQWz5VRpXC1n6b2qB2pbyeCUIpo&quot;
+1 &lt; Expires: Thu, 30 Nov 2023 22:01:28 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01HGB020CF6FHAFHKDCD2HEF9F
+1 &lt; X-Powered-By: Express
+{&quot;image&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/character\/avatar\/3.jpeg&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;created&quot;:&quot;2017-11-04T19:09:56.428Z&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/20&quot;},&quot;name&quot;:&quot;Summer Smith&quot;,&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/20&quot;},&quot;episode&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/episode\/6&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/8&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/9&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/10&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/19&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/24&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/25&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/30&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/33&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/36&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/39&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/41&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/42&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/43&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/44&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/46&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/48&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/51&quot;],&quot;id&quot;:3,&quot;type&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/character\/3&quot;,&quot;status&quot;:&quot;Alive&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:10]</span>
+                <span class="scenario-name">Testando retorno com informações inválidas (negativo)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>368</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:55.354 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api/character/1000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">363</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">09:56:55.364 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/1000
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:55.717 response time in milliseconds: 352
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Content-Length: 31
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:54 GMT
+1 &lt; Etag: W/&quot;1f-t9l5xVmJZaPHJIukjZQ7Mw4gpG8&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01HGB020PFRA00H8A624VT2JHB
+1 &lt; X-Powered-By: Express
+{&quot;error&quot;:&quot;Character not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:15]</span>
+                <span class="scenario-name">Testando retorno e verificando o JSON</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>204</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:55.757 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/character/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">136</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">09:56:55.787 request:
+1 &gt; GET https://rickandmortyapi.com/api/character/1
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:55.917 response time in milliseconds: 128
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 89342
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:54 GMT
+1 &lt; Etag: W/&quot;a9f-I68Cx5oSPFclkl+Wy2Fr9jNsFS8&quot;
+1 &lt; Expires: Thu, 30 Nov 2023 12:07:52 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01HGB0213R87F5WJPCKP0MBJEA
+1 &lt; X-Powered-By: Express
+{&quot;image&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/character\/avatar\/1.jpeg&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;created&quot;:&quot;2017-11-04T18:48:46.250Z&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/1&quot;},&quot;name&quot;:&quot;Rick Sanchez&quot;,&quot;location&quot;:{&quot;name&quot;:&quot;Citadel of Ricks&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/3&quot;},&quot;episode&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/episode\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/3&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/4&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/5&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/6&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/7&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/8&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/9&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/10&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/11&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/13&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/14&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/15&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/16&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/18&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/19&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/20&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/21&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/22&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/23&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/24&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/25&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/26&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/27&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/28&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/29&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/30&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/31&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/32&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/33&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/34&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/35&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/36&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/37&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/39&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/40&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/41&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/42&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/43&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/44&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/46&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/47&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/48&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/49&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/50&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/episode\/51&quot;],&quot;id&quot;:1,&quot;type&quot;:&quot;&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;status&quot;:&quot;Alive&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;Rick Sanchez&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:23]</span>
+                <span class="scenario-name">Testando retorno de dados da localização</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>148</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:55.986 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/location/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">134</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">09:56:56.005 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/1
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:56.132 response time in milliseconds: 126
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 52084
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:54 GMT
+1 &lt; Etag: W/&quot;5bd-z1uR7QIj/drOx7zc6tKN4cgSews&quot;
+1 &lt; Expires: Thu, 30 Nov 2023 22:28:50 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01HGB021AFWFHBMGHG00FVKW8Q
+1 &lt; X-Powered-By: Express
+{&quot;created&quot;:&quot;2017-11-10T12:42:04.162Z&quot;,&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;residents&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/71&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/82&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/83&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/92&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/116&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/117&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/120&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/127&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/155&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/179&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/216&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/239&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/271&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/303&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/343&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/394&quot;],&quot;id&quot;:1,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Dimension C-137&quot;,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/location\/1&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def residente = response.residents[1]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match residente == &quot;https://rickandmortyapi.com/api/character/45&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:31]</span>
+                <span class="scenario-name">Testando retorno de dados da localização (negativo)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>346</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:56.165 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/location/300&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">344</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">09:56:56.175 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/300
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:56.507 response time in milliseconds: 330
+1 &lt; 404
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Content-Length: 30
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:55 GMT
+1 &lt; Etag: W/&quot;1e-KQLHk60bcEy7DdICzHZFrEmAFio&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01HGB021FRYY842ZQZAKJN9WJG
+1 &lt; X-Powered-By: Express
+{&quot;error&quot;:&quot;Location not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:37]</span>
+                <span class="scenario-name">Testando retorno de dados de episódio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>416</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://rickandmortyapi.com/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:56:56.535 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/episode/3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">411</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">09:56:56.542 request:
+1 &gt; GET https://rickandmortyapi.com/api/episode/3
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.21)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:56:56.944 response time in milliseconds: 398
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Nov 2023 12:56:55 GMT
+1 &lt; Etag: W/&quot;52a-4xIAh5d8hU21by3wIL2An68K4oE&quot;
+1 &lt; Expires: Fri, 01 Dec 2023 12:56:55 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01HGB021X74ZVQ5ER6A26GBF2M
+1 &lt; X-Powered-By: Express
+{&quot;air_date&quot;:&quot;December 16, 2013&quot;,&quot;characters&quot;:[&quot;https:\/\/rickandmortyapi.com\/api\/character\/1&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/2&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/12&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/17&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/38&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/45&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/96&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/97&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/98&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/99&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/100&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/101&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/108&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/112&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/114&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/169&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/175&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/186&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/201&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/268&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/300&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/302&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/338&quot;,&quot;https:\/\/rickandmortyapi.com\/api\/character\/356&quot;],&quot;created&quot;:&quot;2017-11-10T12:56:34.022Z&quot;,&quot;name&quot;:&quot;Anatomy Park&quot;,&quot;episode&quot;:&quot;S01E03&quot;,&quot;id&quot;:3,&quot;url&quot;:&quot;https:\/\/rickandmortyapi.com\/api\/episode\/3&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def personagem = response.characters[2]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match personagem == &quot;https://rickandmortyapi.com/api/character/12&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -31,4 +31,4 @@ Feature: Testando API Pokemon
                 When method get
                 Then status 200
                 And match response.name == "fr"
-                And match response.id == 5
+                And match response.id == 7
