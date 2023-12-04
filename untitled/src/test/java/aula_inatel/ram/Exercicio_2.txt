@@ -1,7 +1,7 @@
 1. Quantas suítes de testes você desenvolveu? Desenvolvi uma suíte de testes com 6 cenários de testes.
 
 2. Os testes desenvolvidos são manuais ou automatizados?
-Automatizados, desenvolvidos através do Karate e gera um relatório depois de toda execução.
+Automatizados, desenvolvidos através do Karate e geram um relatório depois de toda execução.
 
 3. Onde os testes se localizam na pirâmide apresentada? 
 São testes de integração, testando certa(s) funcionalidade(s) do sistema.

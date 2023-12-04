@@ -6,14 +6,12 @@ This repository contains a test suite written in [Karate](https://github.com/int
 
 ## Requisites
 
-Before running the tests, make sure you have this installed:
-
 - [Java](https://www.java.com/en/download/)
 - [Maven](https://maven.apache.org/download.cgi)
 
 ## Karate Installation
 
-If you are new to Karate or need help installing it, I recommend watching this video here [Setting up Karate Framework on IntelliJ IDEA](https://www.youtube.com/watch?v=-KOJ12Dbxrk) on YouTube. This tutorial provides step-by-step guidance on how to set up Karate for your projects in Intellij IDEA.
+If you are new to Karate or need help installing it, I recommend watching this video here [Setting up Karate Framework on IntelliJ IDEA](https://www.youtube.com/watch?v=-KOJ12Dbxrk). This tutorial provides step-by-stepon how to set up Karate for your projects with Intellij IDEA.
 
 ## Test Scenarios
 
