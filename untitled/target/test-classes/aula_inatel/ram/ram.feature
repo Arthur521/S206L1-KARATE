@@ -28,7 +28,7 @@ Feature: Testando API Rick and Morty
                 And match residente == "https://rickandmortyapi.com/api/character/45"
                 Then status 200
 
-        Scenario: Testando retorno de dados da localização (negativo)
+        Scenario: Testando retorno com informações inválidas (negativo)
                 Given url url_base
                 And path '/location/300'
                 When method get
@@ -38,6 +38,6 @@ Feature: Testando API Rick and Morty
                 Given url url_base
                 And path '/episode/3'
                 When method get
-                And def personagem = response.characters[2]
+                And def personagem = response.characters[3]
                 And match personagem == "https://rickandmortyapi.com/api/character/12"
                 Then status 200
